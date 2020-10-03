@@ -22,7 +22,8 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_cortex.h \
  ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_pwr.h \
  ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_pwr_ex.h \
- ../Core/Inc/gpio.h ../Core/Inc/main.h
+ ../Core/Inc/gpio.h ../Core/Inc/main.h \
+ D:/work/STM32MP157/STM32MP157-Demo/157Demo/CM4/User/APP/APPMain.h
 
 ../Core/Inc/main.h:
 
@@ -75,3 +76,5 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Core/Inc/gpio.h:
 
 ../Core/Inc/main.h:
+
+D:/work/STM32MP157/STM32MP157-Demo/157Demo/CM4/User/APP/APPMain.h:

@@ -1,5 +1,5 @@
 Drivers/STM32MP1xx_HAL_Driver/stm32mp1xx_hal_hsem.o: \
- D:/Software/STM32CubeIDE_1.4.0/157Demo/Drivers/STM32MP1xx_HAL_Driver/Src/stm32mp1xx_hal_hsem.c \
+ D:/work/STM32MP157/STM32MP157-Demo/157Demo/Drivers/STM32MP1xx_HAL_Driver/Src/stm32mp1xx_hal_hsem.c \
  ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal.h \
  ../Core/Inc/stm32mp1xx_hal_conf.h \
  ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_rcc.h \

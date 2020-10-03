@@ -1,5 +1,5 @@
 Common/System/system_stm32mp1xx.o: \
- D:/Software/STM32CubeIDE_1.4.0/157Demo/Common/System/system_stm32mp1xx.c \
+ D:/work/STM32MP157/STM32MP157-Demo/157Demo/Common/System/system_stm32mp1xx.c \
  ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal.h \
  ../Core/Inc/stm32mp1xx_hal_conf.h \
  ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_rcc.h \
