@@ -11,14 +11,14 @@
  * @history:
  * V1.0 创建文件
 ***********************************************************************/
-#ifndef LEDGPIO.h
-#define LEDGPIO.h
+#ifndef __LEDGPIO_h__
+#define __LEDGPIO_h__
+#include "stdint.h"
 
 void SetYellowLedLeave(uint8_t leave);
 void SetGreenLedLeave(uint8_t leave);
 
-#include "stdint.h"
-#endif // LEDGPIO.h
+#endif // __LEDGPIO_h__
 
 
 

@@ -116,14 +116,25 @@ void SystemClock_Config(void)
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
   */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI|RCC_OSCILLATORTYPE_LSI;
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI|RCC_OSCILLATORTYPE_LSI
+                              |RCC_OSCILLATORTYPE_HSE;
+  RCC_OscInitStruct.HSEState = RCC_HSE_ON;
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
   RCC_OscInitStruct.HSICalibrationValue = 16;
   RCC_OscInitStruct.HSIDivValue = RCC_HSI_DIV1;
   RCC_OscInitStruct.LSIState = RCC_LSI_ON;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_NONE;
   RCC_OscInitStruct.PLL2.PLLState = RCC_PLL_NONE;
-  RCC_OscInitStruct.PLL3.PLLState = RCC_PLL_NONE;
+  RCC_OscInitStruct.PLL3.PLLState = RCC_PLL_ON;
+  RCC_OscInitStruct.PLL3.PLLSource = RCC_PLL3SOURCE_HSE;
+  RCC_OscInitStruct.PLL3.PLLM = 2;
+  RCC_OscInitStruct.PLL3.PLLN = 52;
+  RCC_OscInitStruct.PLL3.PLLP = 3;
+  RCC_OscInitStruct.PLL3.PLLQ = 2;
+  RCC_OscInitStruct.PLL3.PLLR = 2;
+  RCC_OscInitStruct.PLL3.PLLRGE = RCC_PLL3IFRANGE_1;
+  RCC_OscInitStruct.PLL3.PLLFRACV = 2048;
+  RCC_OscInitStruct.PLL3.PLLMODE = RCC_PLL_FRACTIONAL;
   RCC_OscInitStruct.PLL4.PLLState = RCC_PLL_NONE;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
@@ -137,18 +148,21 @@ void SystemClock_Config(void)
                               |RCC_CLOCKTYPE_PCLK5;
   RCC_ClkInitStruct.AXISSInit.AXI_Clock = RCC_AXISSOURCE_HSI;
   RCC_ClkInitStruct.AXISSInit.AXI_Div = RCC_AXI_DIV1;
-  RCC_ClkInitStruct.MCUInit.MCU_Clock = RCC_MCUSSOURCE_HSI;
+  RCC_ClkInitStruct.MCUInit.MCU_Clock = RCC_MCUSSOURCE_PLL3;
   RCC_ClkInitStruct.MCUInit.MCU_Div = RCC_MCU_DIV1;
-  RCC_ClkInitStruct.APB4_Div = RCC_APB4_DIV1;
-  RCC_ClkInitStruct.APB5_Div = RCC_APB5_DIV1;
-  RCC_ClkInitStruct.APB1_Div = RCC_APB1_DIV1;
-  RCC_ClkInitStruct.APB2_Div = RCC_APB2_DIV1;
-  RCC_ClkInitStruct.APB3_Div = RCC_APB3_DIV1;
+  RCC_ClkInitStruct.APB4_Div = RCC_APB4_DIV2;
+  RCC_ClkInitStruct.APB5_Div = RCC_APB5_DIV4;
+  RCC_ClkInitStruct.APB1_Div = RCC_APB1_DIV2;
+  RCC_ClkInitStruct.APB2_Div = RCC_APB2_DIV2;
+  RCC_ClkInitStruct.APB3_Div = RCC_APB3_DIV2;
 
   if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct) != HAL_OK)
   {
     Error_Handler();
   }
+  /** Set the HSE division factor for RTC clock
+  */
+  __HAL_RCC_RTC_HSEDIV(1);
 }
 
 /* USER CODE BEGIN 4 */

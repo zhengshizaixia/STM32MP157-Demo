@@ -10,15 +10,15 @@
  * @history:
  * V1.0 创建文件
 ***********************************************************************/
-#ifndef APPMain.h
-#define APPMain.h
+#ifndef __APPMain_h__
+#define __APPMain_h__
 
 #include "stdint.h"
 
 void APPMain_Init(void);
 void APPMain_Loop(void);
 
-#endif // APPMain.h
+#endif // __APPMain_h__
 
 
 

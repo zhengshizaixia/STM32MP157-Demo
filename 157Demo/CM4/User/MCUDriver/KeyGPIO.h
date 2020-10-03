@@ -1,22 +1,21 @@
 /***********************************************************************
- * @file FunctionMain.h
+ * @file KeyGPIO.h
  * Description:
  *
  **********************************************************************
- * File name:      FunctionMain.h
+ * File name:      KeyGPIO.h
  * Date:           2020-10-03
  * Version:        V1.0
  * Author          liuxiang
  * @history:
  * V1.0 创建文件
 ***********************************************************************/
-#ifndef __FunctionMain_h__
-#define __FunctionMain_h__
+#ifndef __KeyGPIO_h__
+#define __KeyGPIO_h__
 
 #include "stdint.h"
 
-void FunctionMain_Init(void);
-void FunctionMain_Loop(void);
+uint8_t GetKey1Leave(uint8_t leave);
+uint8_t GetKey2Leave(uint8_t leave);
 
-#endif // __FunctionMain_h__
-
+#endif // __KeyGPIO_h__
