@@ -20,8 +20,12 @@ Core/Src/stm32mp1xx_it.o: ../Core/Src/stm32mp1xx_it.c ../Core/Inc/main.h \
  ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_dma_ex.h \
  ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_mdma.h \
  ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_cortex.h \
+ ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_i2c.h \
+ ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_i2c_ex.h \
  ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_pwr.h \
  ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_pwr_ex.h \
+ ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_uart.h \
+ ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_uart_ex.h \
  ../Core/Inc/stm32mp1xx_it.h
 
 ../Core/Inc/main.h:
@@ -68,8 +72,16 @@ Core/Src/stm32mp1xx_it.o: ../Core/Src/stm32mp1xx_it.c ../Core/Inc/main.h \
 
 ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_cortex.h:
 
+../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_i2c.h:
+
+../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_i2c_ex.h:
+
 ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_pwr.h:
 
 ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_pwr_ex.h:
+
+../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_uart.h:
+
+../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_uart_ex.h:
 
 ../Core/Inc/stm32mp1xx_it.h:

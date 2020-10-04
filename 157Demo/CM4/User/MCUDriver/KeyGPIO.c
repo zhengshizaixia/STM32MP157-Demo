@@ -3,7 +3,7 @@
 
 /*************************************************************
 ** Function name:      GetKey1Leave
-** Descriptions:       获取Key_1引脚电平
+** Descriptions:       获取Key_1引脚电平 0:按下
 ** Input parameters:   none
 ** Output parameters:  none
 ** Returned value:     leave：0:低电平 1:高电平
@@ -16,7 +16,7 @@ uint8_t GetKey1Leave(uint8_t leave)
 }
 /*************************************************************
 ** Function name:      GetKey2Leave
-** Descriptions:       获取Key_2引脚电平
+** Descriptions:       获取Key_2引脚电平 0:按下
 ** Input parameters:   none
 ** Output parameters:  none
 ** Returned value:     leave：0:低电平 1:高电平

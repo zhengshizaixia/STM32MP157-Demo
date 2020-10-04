@@ -3,7 +3,7 @@
 
 /*************************************************************
 ** Function name:      SetYellowLedLeave
-** Descriptions:       设置黄色LED引脚电平
+** Descriptions:       设置黄色LED引脚电平 0：点亮
 ** Input parameters:   leave：0:低电平 1:高电平
 ** Output parameters:  none
 ** Returned value:     none
@@ -16,7 +16,7 @@ void SetYellowLedLeave(uint8_t leave)
 }
 /*************************************************************
 ** Function name:      SetGreenLedLeave
-** Descriptions:       设置绿色LED引脚电平
+** Descriptions:       设置绿色LED引脚电平 0：点亮
 ** Input parameters:   leave：0:低电平 1:高电平
 ** Output parameters:  none
 ** Returned value:     none

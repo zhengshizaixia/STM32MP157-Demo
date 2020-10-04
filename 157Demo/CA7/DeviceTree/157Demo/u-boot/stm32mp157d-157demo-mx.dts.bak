@@ -72,6 +72,13 @@
 &pinctrl {
 	u-boot,dm-pre-reloc;
 
+	m4_uart8_pins_mx: m4_uart8_mx-0 {
+		pins {
+			pinmux = <STM32_PINMUX('E', 0, RSVD)>, /* UART8_RX */
+					 <STM32_PINMUX('E', 1, RSVD)>; /* UART8_TX */
+		};
+	};
+
 	/* USER CODE BEGIN pinctrl */
 	/* USER CODE END pinctrl */
 };
@@ -141,6 +148,15 @@
 
 	/* USER CODE BEGIN m4_dma2 */
 	/* USER CODE END m4_dma2 */
+};
+
+&m4_uart8{
+	pinctrl-names = "default";
+	pinctrl-0 = <&m4_uart8_pins_mx>;
+	status = "okay";
+
+	/* USER CODE BEGIN m4_uart8 */
+	/* USER CODE END m4_uart8 */
 };
 
 &mdma1{
