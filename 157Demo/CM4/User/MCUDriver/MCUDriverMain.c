@@ -29,13 +29,5 @@ void MCUDriverMain_Init(void)
 *************************************************************/
 void MCUDriverMain_Loop(void)
 {
-    SetYellowLedLeave(1);
-    SetGreenLedLeave(0);
 
-    HAL_Delay(500);
-
-    SetYellowLedLeave(0);
-    SetGreenLedLeave(1);
-
-    HAL_Delay(500);
 }

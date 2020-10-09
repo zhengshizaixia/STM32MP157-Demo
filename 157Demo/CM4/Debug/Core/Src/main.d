@@ -28,7 +28,7 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../../Drivers/STM32MP1xx_HAL_Driver/Inc/stm32mp1xx_hal_uart_ex.h \
  ../Core/Inc/i2c.h ../Core/Inc/main.h ../Core/Inc/usart.h \
  ../Core/Inc/gpio.h \
- D:/work/STM32MP157/STM32MP157-Demo/157Demo/CM4/User/APP/APPMain.h
+ E:/study/STM32MP157/STM32MP157-Demo/157Demo/CM4/User/APP/APPMain.h
 
 ../Core/Inc/main.h:
 
@@ -94,4 +94,4 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 
 ../Core/Inc/gpio.h:
 
-D:/work/STM32MP157/STM32MP157-Demo/157Demo/CM4/User/APP/APPMain.h:
+E:/study/STM32MP157/STM32MP157-Demo/157Demo/CM4/User/APP/APPMain.h:
