@@ -1,4 +1,8 @@
 #include "MCUDriverMain.h"
+
+#include "LEDGPIO.h"
+#include "main.h"
+
 /*************************************************************
 ** Function name:      MCUDriverMain_Init
 ** Descriptions:       芯片初始化
@@ -25,5 +29,13 @@ void MCUDriverMain_Init(void)
 *************************************************************/
 void MCUDriverMain_Loop(void)
 {
+    SetYellowLedLeave(1);
+    SetGreenLedLeave(0);
 
+    HAL_Delay(500);
+
+    SetYellowLedLeave(0);
+    SetGreenLedLeave(1);
+
+    HAL_Delay(500);
 }
