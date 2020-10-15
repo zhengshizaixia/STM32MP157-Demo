@@ -12,8 +12,7 @@
 *************************************************************/
 void PerDriverMain_Init(void)
 {
-    LEDConfigSetGreenLedStatus(LEDConfig_ON, 1.0);
-    LEDConfigSetYellowLedStatus(LEDConfig_Toggle, 1.0);
+
 }
 
 /*************************************************************
